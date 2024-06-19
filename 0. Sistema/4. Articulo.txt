@@ -1,0 +1,8 @@
+﻿Escribe un artículo muy detallado de al menos 3000 palabras de longitud para un sitio web. Titula el artículo como "{titulo}". Formatea el artículo usando HTML y asegúrate de organizar el contenido en muchos párrafos extremadamente largos, utilizando las etiquetas <p> y </p>. Integra naturalmente la palabra clave <strong>{keyword}<strong> a lo largo del texto.
+
+Es obligatorio que el artículo web incluya todos los siguientes subtítulos:
+---
+{estructura}
+---
+
+Responde únicamente con el artículo sin decir nada más.

@@ -1,0 +1,9 @@
+Responde únicamente con la categoría que debe tener mi artículo de un sitio web de tutoriales. Debes basarte en la respuesta que recibes, que son los temas a tratar en el artículo.
+
+Debes responder solo con una de las siguientes líneas:
+----
+Tecnología
+Genérica
+---
+
+Responde únicamente con la categoría sin decir nada más.
