@@ -22,7 +22,7 @@ Generación masiva de artículos optimizados para los buscadores a partir de pal
   ## Uso
   Aquí tienes un ejemplo básico de cómo utilizar WriteSEO
   1. Introducir una o un listado de palabras clave. Puede ser mediante un archivo .csv llamado "palabrasclave.csv" en cuya segunda columna tenga las palabras clave o introduciendo en el archivo de texto Keywords.txt las palabras clave.
-  2. Ejecutar el Script y esperar a que se generen los artículos.
+  2. Ejecutar el Script writeSEO.py y esperar a que se generen los artículos.
   3. Visualizar los artículos abriendo preview.html en tu navegador preferido o gestionar los datos generados en el archivo "3. Articulos.csv" con una aplicacion externa.
  
   ## Estructura del Proyecto
