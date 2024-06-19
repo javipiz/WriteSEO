@@ -471,7 +471,8 @@ def procesar_keyword(keyword):
     imagen,PrecioImagen = crear_imagen(estructura)
     categoria,PrecioCategoria = crear_categoria(estructura)
     video_url=buscar_video(keyword)
-    print("Estoy Aquí")
+    print("Todos Los elementos del artículo", titulo, "Generados")
+    print("Generando imagen", titulo, "...")
     img,precioImg=generar_imagen(keyword)
     tokensGenerados=calcular_numero_tokens(titulo+pregunta+investigacion+estructura+articulo+descripcion+imagen+categoria)
 
