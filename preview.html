@@ -1,0 +1,391 @@
+﻿
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Previsualización HTML WriteSEO</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<!--    <link href="blog.css" rel="stylesheet">-->
+    <style>
+        /* stylelint-disable selector-list-comma-newline-after */
+        .imagen-derecha {
+            float: right;
+            margin: 30px 10px 10px 0;
+            width: 300px; /* Ajusta el tamaño según tus necesidades */
+            height: auto;
+        }
+        .blog-header {
+            line-height: 1;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+            font-size: 2.25rem;
+        }
+
+        .blog-header-logo:hover {
+            text-decoration: none;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        }
+        
+        h2 {
+            margin-top: 30px;
+        }
+        
+        h3 {
+            margin-top: 20px;
+        }
+
+        .display-4 {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .display-4 {
+                font-size: 3rem;
+            }
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-scroller .nav-link {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            font-size: .875rem;
+        }
+
+        .card-img-right {
+            height: 100%;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .flex-auto {
+            -ms-flex: 0 0 auto;
+            -webkit-box-flex: 0;
+            flex: 0 0 auto;
+        }
+
+        .h-250 {
+            height: 250px;
+        }
+
+        @media (min-width: 768px) {
+            .h-md-250 {
+                height: 250px;
+            }
+        }
+
+        .border-top {
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+
+        /*
+         * Blog name and description
+         */
+        .blog-title {
+            margin-bottom: 0;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        .blog-description {
+            font-size: 1.1rem;
+            color: #999;
+        }
+
+        @media (min-width: 40em) {
+            .blog-title {
+                font-size: 3.5rem;
+            }
+        }
+
+        /* Pagination */
+        .blog-pagination {
+            margin-bottom: 4rem;
+        }
+
+        .blog-pagination > .btn {
+            border-radius: 2rem;
+        }
+
+        /*
+         * Blog posts
+         */
+        .blog-post {
+            margin-bottom: 4rem;
+        }
+
+        .blog-post-title {
+            margin-bottom: .25rem;
+            font-size: 2.5rem;
+        }
+
+        .blog-post-meta {
+            margin-bottom: 1.25rem;
+            color: #999;
+        }
+
+        /*
+         * Footer
+         */
+        .blog-footer {
+            padding: 2.5rem 0;
+            color: #999;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: .05rem solid #e5e5e5;
+        }
+
+        .blog-footer p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="text-muted" href="#">UNIR TFG</a>
+            </div>
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark" href="#">WriteSEO</a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <a class="text-muted" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mx-3">
+                        <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                        <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                    </svg>
+                </a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">:D</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 text-muted" href="#">Inteligencia Artificial</a>
+            <a class="p-2 text-muted" href="#">SEO</a>
+            <a class="p-2 text-muted" href="#">Generación de Contenido</a>
+            <a class="p-2 text-muted" href="#">NPL</a>
+            <a class="p-2 text-muted" href="#">Automatización</a>
+            <a class="p-2 text-muted" href="#">GPT3.5 Turbo 16k</a>
+            <a class="p-2 text-muted" href="#">WriteSEO</a>
+            <a class="p-2 text-muted" href="#">Javi Pizarro</a>
+            <a class="p-2 text-muted" href="#">TFG</a>
+            <a class="p-2 text-muted" href="#">UNIR</a>
+            <a class="p-2 text-muted" href="#">HTML</a>
+        </nav>
+    </div>
+
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic">Previsualización de Artículos</h1>
+            <p class="lead my-3">En esta página listaremos todos los posts que ha generado el script WriteSEO de Javi Pizarro para UNIR.</p>
+        </div>
+    </div>
+</div>
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">
+                TFG UNIR JAVI PIZARRO
+            </h3>
+
+            
+                <div class="blog-post">
+                    <h1 class="blog-post-title">Cómo crear una página web: Guía paso a paso en 2024</h1>
+                    <p class="blog-post-meta">30 de Junio, 2024 por <a href="#">Javi Pizarro</a> Categorías: Tecnología Palabras Clave Usada: Como crear una pagina web</p>
+                    <p class="blog-post-meta"> <a href="#">Imagen: </a> Guía paso a paso página web </p>
+                    <p class="blog-post-meta"> <a href="#">Descripcion: </a> Aprende cómo crear una página web paso a paso en 2024. Define tu presupuesto, elige un dominio, plataforma y optimiza para SEO. ¡Comienza ahora! </p>
+
+
+                    <iframe width="750" height="400" src="https://www.youtube.com/embed/R-yPWuurehs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+
+                    <p><img src="images/como-crear-una-pagina-web.jpg" alt="Guía paso a paso página web" class="imagen-derecha"><p>Crear una página web puede parecer una tarea abrumadora, pero con la guía adecuada y las herramientas correctas, puedes lograrlo de manera exitosa. En esta guía paso a paso, te mostraré cómo crear una página web en 2024, desde la planificación inicial hasta la publicación y promoción de tu sitio. Sigue leyendo para descubrir todos los pasos necesarios para crear una página web exitosa.</p>
+
+<h2>Define tu presupuesto y equipo necesario</h2>
+
+<p>Antes de comenzar a crear tu página web, es importante que definas tu presupuesto y el equipo necesario. Determina cuánto estás dispuesto a invertir en tu sitio web, ya sea en el registro de dominio, el servicio de hosting, el diseño y desarrollo, y cualquier otra herramienta o servicio que necesites. También considera si necesitarás contratar a profesionales externos, como diseñadores o desarrolladores web, para ayudarte en el proceso.</p>
+
+<h2>Registra un dominio personalizado</h2>
+
+<p>El primer paso para crear una página web es registrar un dominio personalizado. Un dominio es la dirección única de tu sitio web en Internet, como www.tupaginaweb.com. Elige un nombre de dominio que sea relevante para tu negocio o proyecto, fácil de recordar y que refleje la identidad de tu marca. Puedes registrar tu dominio a través de diferentes proveedores de dominios en línea.</p>
+
+<h2>Elige un servicio de hosting</h2>
+
+<p>Después de registrar tu dominio, necesitarás elegir un servicio de hosting. El hosting es el espacio en línea donde se almacenarán los archivos de tu página web y permitirá que tu sitio esté disponible en Internet. Hay diferentes opciones de hosting disponibles, como hosting compartido, hosting dedicado y hosting en la nube. Considera tus necesidades y presupuesto para elegir el servicio de hosting adecuado para tu página web.</p>
+
+<h2>Selecciona una plataforma de CMS o ecommerce</h2>
+
+<p>Una vez que hayas registrado tu dominio y elegido un servicio de hosting, es hora de seleccionar una plataforma de CMS (Sistema de Gestión de Contenidos) o ecommerce. Un CMS te permitirá crear y administrar el contenido de tu página web de manera fácil y rápida, mientras que una plataforma de ecommerce te permitirá vender productos en línea. Algunas opciones populares de CMS incluyen WordPress, Joomla y Drupal, mientras que Shopify y WooCommerce son plataformas de ecommerce populares.</p>
+
+<h2>Define el objetivo de tu página web</h2>
+
+<p>Antes de comenzar a trabajar en el diseño y contenido de tu página web, es importante que definas claramente el objetivo de tu sitio. ¿Quieres promocionar tu negocio, vender productos en línea, compartir información o simplemente tener presencia en Internet? Al tener un objetivo claro, podrás enfocar tus esfuerzos en crear un sitio web que cumpla con tus necesidades y las de tus visitantes.</p>
+
+<h2>Conoce a tu público objetivo</h2>
+
+<p>Una vez que hayas definido el objetivo de tu página web, es importante que conozcas a tu público objetivo. ¿Quiénes son tus visitantes ideales? ¿Qué tipo de contenido les interesa? ¿Cuáles son sus necesidades y deseos? Al comprender a tu público objetivo, podrás crear un sitio web que les resulte atractivo y relevante, lo que aumentará la probabilidad de que se queden en tu sitio y realicen las acciones que deseas.</p>
+
+<h2>Trabaja en el contenido de tu página web</h2>
+
+<p>El contenido es uno de los aspectos más importantes de tu página web. Es lo que atraerá a los visitantes y los mantendrá interesados en tu sitio. Crea contenido relevante, útil y de calidad que responda a las necesidades de tu público objetivo. Utiliza palabras clave relevantes para mejorar tu posicionamiento en los motores de búsqueda y asegúrate de que tu contenido sea fácil de leer y comprender.</p>
+
+<h2>Haz que tu página web sea intuitiva y fácil de navegar</h2>
+
+<p>La navegación de tu página web es otro aspecto crucial para crear una buena experiencia de usuario. Haz que tu sitio sea intuitivo y fácil de navegar, con menús claros y organizados, enlaces internos y externos relevantes, y una estructura de página coherente. Asegúrate de que los visitantes puedan encontrar fácilmente la información que están buscando y que puedan moverse por tu sitio sin problemas.</p>
+
+<h2>Optimiza tu página web para los motores de búsqueda</h2>
+
+<p>Para que tu página web sea visible en los motores de búsqueda, es importante que la optimices para SEO (Search Engine Optimization). Utiliza palabras clave relevantes en tu contenido, metaetiquetas y descripciones, y asegúrate de que tu sitio esté bien estructurado y tenga una velocidad de carga rápida. Considera también la posibilidad de crear contenido regularmente y obtener enlaces de calidad hacia tu sitio para mejorar tu posicionamiento en los motores de búsqueda.</p>
+
+<h2>Realiza pruebas de usabilidad</h2>
+
+<p>Antes de publicar tu página web, es recomendable realizar pruebas de usabilidad para asegurarte de que tu sitio sea fácil de usar y cumpla con las expectativas de tus visitantes. Pide a amigos, familiares o incluso a usuarios externos que prueben tu sitio y te den su opinión. Toma en cuenta sus comentarios y realiza los ajustes necesarios para mejorar la experiencia de usuario.</p>
+
+<h2>Difunde y promociona tu página web</h2>
+
+<p>Una vez que hayas publicado tu página web, es importante que la difundas y promociones para atraer visitantes. Utiliza estrategias de marketing digital como las redes sociales, el correo electrónico y el SEO para aumentar la visibilidad de tu sitio. Considera también la posibilidad de colaborar con influencers o realizar campañas publicitarias para llegar a un público más amplio.</p>
+
+<h2>Considera agregar un carrito de compras</h2>
+
+<p>Si tu objetivo es vender productos en línea, considera agregar un carrito de compras a tu página web. Un carrito de compras te permitirá mostrar tus productos, gestionar inventario, procesar pagos y realizar envíos de manera eficiente. Puedes utilizar una plataforma de ecommerce como Shopify, WooCommerce o Magento, instalar un plugin específico o incluso programar uno desde cero.</p>
+
+<h2>Utiliza herramientas para crear tu página web</h2>
+
+<p>Existen muchas herramientas disponibles en el mercado que te facilitarán la creación de tu página web. Algunas opciones populares incluyen Tiendanube, WordPress, Wix, Squarespace, Webnode, Weebly, Jimdo, Duda, Gator Builder, Webflow, One.com, Mozello, GoDaddy, entre otras. Investiga y elige la herramienta que mejor se adapte a tus necesidades y habilidades técnicas.</p>
+
+<h2>Elige una plataforma de ecommerce</h2>
+
+<p>Si tu objetivo es vender productos en línea, es importante que elijas una plataforma de ecommerce adecuada. Algunas opciones populares incluyen Tiendanube, Shopify, WooCommerce, Magento, BigCommerce, entre otras. Investiga las características, precios y facilidad de uso de cada plataforma para tomar una decisión informada.</p>
+
+<h2>Selecciona un diseño para tu página web</h2>
+
+<p>El diseño de tu página web es otro aspecto importante para captar la atención de tus visitantes. Elige un diseño que sea atractivo, profesional y que refleje la identidad de tu marca. Considera la estructura de página, los colores, las fuentes y las imágenes que utilizarás en tu sitio. Si no tienes habilidades de diseño, considera contratar a un diseñador web para que te ayude.</p>
+
+<h2>Publica tus productos en tu página web</h2>
+
+<p>Si estás utilizando una plataforma de ecommerce, es hora de publicar tus productos en tu página web. Agrega imágenes de alta calidad, descripciones detalladas y precios atractivos para cada producto. Organiza tus productos en categorías y utiliza etiquetas relevantes para facilitar la búsqueda de los visitantes. Asegúrate de que la información de tus productos esté actualizada y que los visitantes puedan realizar compras de manera fácil y segura.</p>
+
+<h2>Configura los métodos de pago y envío</h2>
+
+<p>Si estás vendiendo productos en línea, es importante que configures los métodos de pago y envío en tu página web. Ofrece diferentes opciones de pago, como tarjetas de crédito, PayPal o transferencia bancaria, para adaptarte a las preferencias de tus clientes. También configura los métodos de envío y establece tarifas de envío claras y justas. Asegúrate de que tus métodos de pago y envío sean seguros y confiables.</p>
+
+<h2>Aprovecha los beneficios de tener una página web</h2>
+
+<p>Tener una página web ofrece numerosos beneficios para tu negocio o proyecto. Te permite tener presencia en línea las 24 horas del día, los 7 días de la semana, llegar a un público más amplio, captar la atención de tus visitantes más rápido, responder rápidamente a las preguntas y consultas de los visitantes, y automatizar tus procesos de venta y atención al cliente. Aprovecha al máximo estos beneficios para hacer crecer tu negocio.</p>
+
+<h2>Agrega un carrito de compras a tu página web</h2>
+
+<p>Si tu objetivo es vender productos en línea, agregar un carrito de compras a tu página web es fundamental. Un carrito de compras te permitirá mostrar tus productos, gestionar inventario, procesar pagos y realizar envíos de manera eficiente. Puedes utilizar una plataforma de ecommerce como Shopify, WooCommerce o Magento, instalar un plugin específico o incluso programar uno desde cero. Asegúrate de que tu carrito de compras sea fácil de usar y seguro para tus clientes.</p>
+
+<h2>Considera el costo de crear una página web con carrito de compras</h2>
+
+<p>Al considerar agregar un carrito de compras a tu página web, es importante tener en cuenta el costo asociado. El costo puede variar dependiendo de la plataforma de ecommerce que elijas, los plugins o extensiones que necesites, y cualquier otro servicio adicional que requieras. Investiga y compara las opciones disponibles para encontrar la solución que mejor se adapte a tu presupuesto y necesidades.</p>
+
+<p>Crear una página web puede ser un proceso emocionante y desafiante, pero con la guía adecuada y las herramientas correctas, puedes lograrlo con éxito. Sigue esta guía paso a paso y estarás en el camino correcto para crear una página web exitosa en 2024.</p></p>
+                </div><!-- /.blog-post -->
+                </p>Número de palabras totales: <span class="badge badge-primary">1556</span> Precio del Artículo: <span class="badge badge-primary">0.157376 € </span></p>
+                <hr>
+        
+            
+
+            <nav class="blog-pagination">
+                <a class="btn btn-outline-primary" href="#">Older</a>
+                <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+            </nav>
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+            <div class="p-3 mb-3 bg-light rounded">
+                <h4 class="font-italic">Sobre WriteSEO</h4>
+                <p class="mb-0">Este proyecto tiene como objetivo el desarrollo de un script que emplea inteligencia artificial para generar artículos optimizados para buscadores, siguiendo las mejores prácticas de SEO (Search Engine Optimization). La finalidad es crear una herramienta automatizada que facilite la redacción de contenido web de alta calidad, mejorando la visibilidad en motores de búsqueda como Google.</p>
+                <p class="mb-0">El enfoque de este trabajo no se limita a un propósito específico, sino que establece las bases para futuras adaptaciones y mejoras. A partir del análisis y desarrollo presentados, se podrán realizar los ajustes necesarios y aprovechar la capacidad de escalabilidad y adaptación que ofrece la inteligencia artificial, permitiendo su aplicación en diferentes contextos empresariales y personales. Durante el desarrollo de este TFG, se integrarán diversas tecnologías y algoritmos de inteligencia artificial, junto con herramientas de software libre, para construir un sistema funcional y escalable. Este sistema permitirá a los usuarios generar contenido optimizado, reduciendo el tiempo y los recursos necesarios para crear artículos de calidad, y mejorando la eficacia en la implementación de estrategias SEO.</p>
+                <p class="mb-0">La propuesta incluye el análisis y aplicación de técnicas avanzadas de procesamiento del lenguaje natural (NLP) y aprendizaje automático (ML). Estas técnicas se integrarán en un flujo de trabajo automatizado que garantizará la generación de texto coherente y relevante, ajustado a las mejores prácticas de SEO. Entre estas prácticas se encuentran el uso adecuado de palabras clave, la correcta estructura del contenido y la optimización de metaetiquetas.Este proyecto pretende ofrecer una solución innovadora y eficiente para la generación de contenido web optimizado mediante el uso de inteligencia artificial. Esto contribuirá a mejorar la presencia en línea de empresas y particulares, facilitando la creación de artículos que cumplen con los estándares de calidad y visibilidad en buscadores</p>
+            </div>
+
+        </aside><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="blog-footer">
+    <p>WriteSEO 2024
+    </p>
+    <p>
+        <a href="#">Volver arriba</a>
+    </p>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js"></script>
+<script>
+    Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Imagen'
+    });
+</script>
+</body>
+</html>
