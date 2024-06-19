@@ -16,8 +16,8 @@ Generación masiva de artículos optimizados para los buscadores a partir de pal
  Para instalar y configurar este proyecto, sigue los pasos a continuación:
   1. Clona el repositorio del proyecto.
   2. Instala las dependencias utilizando `pip install -r requirements.txt`.
-  3. Configura las claves API necesarias en los archivos correspondientes.
-  4. Revisa los archivos de prompts, por defecto te genera todo pero siempre puedes cambiar y probar nuevas instrucciones a la IA.
+  3. Configura las claves API necesarias en los archivos correspondientes. Son necesarias una clave api de OpenAI (https://openai.com) y una clave api de ValueSerp (https://www.valueserp.com)
+  4. Revisa los archivos de prompts.Los prompts por defecto están muy estudiados y testeados pero siempre puedes cambiar y probar nuevas instrucciones a la IA.
  
   ## Uso
   Aquí tienes un ejemplo básico de cómo utilizar WriteSEO
